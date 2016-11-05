@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_margin="15dp">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/excel" />
+
+
+    <TextView
+        android:id="@+id/excel_item_tname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="2376335365"
+        android:textSize="18dp" />
+
+
+    <TextView
+        android:id="@+id/excel_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:maxLength="11"
+        android:text="2376335365"
+        android:textSize="14dp" />
+
+    <!--<Button-->
+    <!--android:id="@+id/excel_item_don"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_marginEnd="25dp"-->
+    <!--android:layout_marginRight="25dp"-->
+    <!--android:layout_toLeftOf="@+id/excel_item_open"-->
+    <!--android:layout_toStartOf="@+id/excel_item_open"-->
+    <!--android:text="下载" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/excel_item_open"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_marginEnd="30dp"-->
+    <!--android:layout_marginRight="30dp"-->
+    <!--android:text="打开" />-->
+
+
+</RelativeLayout>

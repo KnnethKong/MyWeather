@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:background="#3DBAD6"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/main_du"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="26°"
+                android:textColor="#ffff"
+                android:textSize="60dp" />
+
+            <LinearLayout
+                android:id="@+id/main_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_du"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mian_add_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="朝阳 / 暴雨"
+                    android:textColor="#e6f6ec"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text=" ··· "
+                android:textColor="#e6f6ec"
+                android:textSize="26dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/main_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textColor="#bababa" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fengxiang"
+                    style="@style/fengxiang"
+                    android:text="南风"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/fengli"
+                    style="@style/fengxiang"
+                    android:layout_marginTop="5dp"
+                    android:text="2级"
+                    android:textSize="26dp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:background="#ffff" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/fengxiang"
+                    android:text="相对湿度"
+                    android:textSize="16dp" />
+
+                <TextView
+                    style="@style/fengxiang"
+                    android:layout_marginTop="5dp"
+
+                    android:text="55%"
+                    android:textSize="26dp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:background="#ffff" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/fengxiang"
+                    android:text="空气质量"
+                    android:textSize="16dp" />
+
+                <TextView
+                    style="@style/fengxiang"
+                    android:layout_marginTop="5dp"
+                    android:text="良"
+                    android:textSize="26dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:background="#E6F6EC"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/mian_jin_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@android:drawable/ic_lock_lock"
+                android:visibility="invisible" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/mian_jin_img"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/jintian"
+                    android:text="今天"
+                    android:textColor="#000"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/jin_type"
+                    style="@style/jintian"
+                    android:text="多云转晴 | 良"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/jin_wendu"
+                style="@style/jintian"
+
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="31°/18°"
+                android:textSize="24dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bababa" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/mian_ming_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@android:drawable/ic_lock_lock"
+                android:visibility="invisible" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/mian_ming_img"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/jintian"
+                    android:text="明天"
+
+
+                    android:textColor="#000"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/ming_type"
+                    style="@style/jintian"
+                    android:text="暴雨 | 优"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ming_wendu"
+                style="@style/jintian"
+
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="27°/21°"
+                android:textSize="24dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bababa" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/mian_hou_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@android:drawable/ic_lock_lock"
+                android:visibility="invisible" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/mian_hou_img"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/jintian"
+                    android:text="后天"
+                    android:textColor="#000"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/hou_type"
+                    style="@style/jintian"
+                    android:text="晴 | 良"
+
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/hou_wendu"
+                style="@style/jintian"
+
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="34°/22°"
+                android:textSize="24dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bababa" />
+
+        <TextView
+            android:id="@+id/main_go_fif"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="15天趋势预报"
+            android:textColor="#000"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+</LinearLayout>

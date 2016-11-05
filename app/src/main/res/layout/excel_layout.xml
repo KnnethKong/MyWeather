@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/excel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打开.xls" />
+
+    <EditText
+        android:id="@+id/excel_edip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/excel_don"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="donExcel"
+        android:text="下载" />
+
+
+    <TextView
+        android:id="@+id/excel_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_light" />
+
+    <ListView
+        android:id="@+id/excel_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    </ListView>
+
+</LinearLayout>

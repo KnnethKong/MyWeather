@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/xlsitem_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="6月考勤" />
+
+        <Button
+            android:id="@+id/xlsitem_don"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_toLeftOf="@+id/xlsitem_open"
+            android:layout_toStartOf="@+id/xlsitem_open"
+            android:enabled="false"
+            android:onClick="donElx"
+            android:text="下载" />
+
+        <Button
+            android:id="@+id/xlsitem_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:enabled="false"
+            android:onClick="openElx"
+            android:text="打开" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/xlsitem_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="16dp" />
+
+</LinearLayout>
